@@ -287,3 +287,22 @@ h1{
         margin-top: 10px;
     }
 }
+
+
+.btn-voltar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F8BBD0; /* Cor lilás */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+    .btn-voltar:hover {
+        background-color: #D88B9B; /* Um tom mais escuro de lilás */
+    }

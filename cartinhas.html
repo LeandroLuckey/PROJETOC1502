@@ -5,8 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartinhas da minha catinha</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cartinhas.css">
 </head>
 <body>
+
+    <div class="container">
+
+        <h1>Cartinhas para meu amorzaoooo ❤️ </h1>
+
+
+        <div class="form-cartinha">
+
+            <textarea  id="texto-cartinha" placeholder="Local para escrever nossas cartinhassss" ></textarea>
+            <input type="file"  id="imagem-cartinha" accept="image/*">
+            <button class="botao-enviar" onclick="enviarCartinha()">Enviar Cartinha 💌</button>
+        </div>
+
+        <div id="cartinhas-enviadas" class="cartinhas-enviadas">
+
+            <h2>Cartinhas Enviadas:</h2>
+
+            <ul id="lista-cartinhas">
+                
+            </ul>
+
+        </div>
+        <a href="index.html" class="btn-voltar">Voltar para as opções</a>
+        
+    </div>
+
     
+    
+
+    <script src="script.js"></script>
 </body>
 </html>
