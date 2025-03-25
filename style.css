@@ -306,3 +306,60 @@ h1{
     .btn-voltar:hover {
         background-color: #D88B9B; /* Um tom mais escuro de lilás */
     }
+
+
+    @media (min-width: 600px) {
+        .cartinha-item {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        .cartinha-item img {
+            max-width: 120px;
+        }
+        .cartinha-item p {
+            flex: 1;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .container {
+            width: 95%;
+            padding: 15px;
+        }
+    
+        .cartinha-item {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .cartinha-item img {
+            max-width: 100px;
+        }
+    
+        .btn-voltar {
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .container {
+            max-width: 700px;
+        }
+    
+        .cartinha-item {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    
+        .cartinha-item img {
+            max-width: 150px;
+        }
+    
+        .cartinha-item p {
+            flex: 1;
+            font-size: 18px;
+        }
+    }
+    
+    
