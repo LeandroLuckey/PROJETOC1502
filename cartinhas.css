@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #F8BBD0;
+    background-color: #ffb6c1;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -22,7 +22,7 @@ body {
 
 h1{
 
-    color: #F8BBD0;
+    color: #ffb6c1;
     font-family: 'Pacifico', cursive;
     margin-bottom: 20px;
 
@@ -44,7 +44,7 @@ textarea{
     height: 150px;
     padding: 10px;
     border-radius: 8px;
-    border: 2px solid #F8BBD0;
+    border: 2px solid #ffb6c1;
     font-size: 16px;
     resize: none;
 }
@@ -52,7 +52,7 @@ textarea{
 .botao-enviar{
 
     padding: 10px 20px;
-    background-color: #F8BBD0;
+    background-color: #ffb6c1;
     border: none;
     color: #fff;
     border-radius: 5px;
@@ -74,7 +74,7 @@ textarea{
 
 .cartinhas-enviadas h2{
 
-        color: #F8BBD0;
+        color: #ffb6c1;
         margin-bottom: 20px;
 }
 
@@ -122,7 +122,7 @@ textarea{
 
 /* Estilo para o botão de excluir */
 .botao-excluir {
-    background-color: #F8BBD0;
+    background-color: #ffb6c1;
     border: none;
     color: #fff;
     padding: 5px 10px;
@@ -140,7 +140,7 @@ textarea{
 .btn-voltar {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #F8BBD0; /* Cor lilás */
+    background-color: #ffb6c1; /* Cor lilás */
     color: white;
     text-align: center;
     text-decoration: none;
