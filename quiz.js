@@ -7,15 +7,30 @@ const perguntas = [
     },
     {
         pergunta: "Qual foi o primeiro presentinho que te dei?",
-        respostas: ["Terço lilaszinho de Ns de Guadalupe", "Chaveiro e Chocolatinho", "Camisa", "Esmaltess"],
+        respostas: ["Terçooo", "Chaveiro e Chocolatinho", "Camisa", "Esmaltess"],
         correta: 1
     },
     {
         pergunta: "Quem é a mulher mais linda desse mundo??",
         respostas: ["MINHA CATINHA", "essa tá errada", "só existe uma opção MUAHAHAHA", "ACEITE OS FATOS MUAHAHAHA"],
         correta: 0
-    }
+    }, {
+        pergunta: "Qual das opções é o nome de um dos nossos futuros filhos??",
+        respostas: ["José", "Teo", "Santiago", "Alexandre"],
+        correta: 2
+    }, {
+        pergunta: "Qual meu esporte favorito?",
+        respostas: ["Futebol", "Vôlei", "Basquete", "Hockey"],
+        correta: 0
+    },{
+        pergunta: "Qual a cor da capinha do meu celular",
+        respostas: ["Vinho", "Vermelha", "Azul escuro", "Preta"],
+        correta: 1
+    },
+      
+
 ];
+
 
 // Variáveis para controle
 let perguntaAtual = 0;
