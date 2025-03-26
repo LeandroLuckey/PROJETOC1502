@@ -26,6 +26,22 @@ const perguntas = [
         pergunta: "Qual a cor da capinha do meu celular",
         respostas: ["Vinho", "Vermelha", "Azul escuro", "Preta"],
         correta: 1
+    },{
+        pergunta: "De quem minha mãe é muito devota?",
+        respostas: ["Aparecida", "Santa Rita", "Santa Teresinha", "São Miguel"],
+        correta: 0
+    },{
+        pergunta: "Qual minha cor favorita?",
+        respostas: ["Azul royal", "Vinho", "Vermelho Carmesin", "Vermelho tomate"],
+        correta: 2
+    },{
+        pergunta: "Qual foi o primeiro presentinho que você me deu?",
+        respostas: ["Chocolatinho e chaveiroo", "Cartinha com meu bonequinho de neve", "Perfumee"],
+        correta: 1
+    },{
+        pergunta: "Você sabia que eu te amo MUITO?",
+        respostas: ["COM CERTEZA"],
+        correta: 0
     },
       
 
