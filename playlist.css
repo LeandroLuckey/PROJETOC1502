@@ -44,6 +44,11 @@ body{
     animation: fadeIn 1s ease-in-out;
 }
 
+.player iframe {
+    width: 100%;
+    height: 352px; /* Altura padrão */
+}
+
 .btn-voltar {
     display: inline-block;
     padding: 10px 20px;
@@ -60,4 +65,36 @@ body{
 
 .btn-voltar:hover {
     background-color: hsl(60, 43%, 80%) ;
+}
+
+
+@media (max-width: 600px) {
+    .titulo {
+        font-size: 2rem; /* Reduz tamanho do título */
+    }
+
+    .player iframe {
+        height: 300px; /* Ajuste para telas menores */
+    }
+
+    .btn-voltar {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* 📱 Estilos para telas ainda menores (exemplo: celulares muito pequenos) */
+@media (max-width: 400px) {
+    .titulo {
+        font-size: 1.8rem;
+    }
+
+    .player iframe {
+        height: 250px;
+    }
+
+    .btn-voltar {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
 }
