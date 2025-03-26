@@ -35,6 +35,9 @@ function mostrarPergunta() {
         li.onclick = () => verificarResposta(index, li);
         opcoes.appendChild(li);
     });
+
+    // Atualiza a pontuação no display (se desejar mostrar durante o quiz)
+    document.getElementById('pontuacao').innerText = `Pontuação: ${pontuacao}`;
 }
 
 // Função para verificar a resposta
@@ -43,7 +46,7 @@ function verificarResposta(respostaEscolhida, elemento) {
 
     // Verifica se a resposta está correta
     if (respostaEscolhida === pergunta.correta) {
-        pontuacao++;
+        pontuacao++; // Incrementa a pontuação
         elemento.classList.add('correct'); // Adiciona a classe verde
     } else {
         elemento.classList.add('incorrect'); // Adiciona a classe vermelha
