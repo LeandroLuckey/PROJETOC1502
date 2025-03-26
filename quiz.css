@@ -123,16 +123,16 @@ button:hover {
     }
 
     li {
-        font-size: 6vw; /* Ajuste proporcional das opções */
+        font-size: 5vw; /* Ajuste proporcional das opções */
         padding: 12px; /* Reduz um pouco o padding para não ficar muito grande */
     }
 
     button {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     #reiniciar-btn {
-        font-size: 5vw;
+        font-size: 4vw;
         padding: 10px 20px;
     }
 }
