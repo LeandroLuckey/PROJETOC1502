@@ -44,9 +44,9 @@ function mostrarPergunta() {
 function verificarResposta(respostaEscolhida, elemento) {
     const pergunta = perguntas[perguntaAtual];
 
-    // Verifica se a resposta está correta
+    // Verifica se a resposta está correta e atualiza a pontuação ANTES de avançar
     if (respostaEscolhida === pergunta.correta) {
-        pontuacao++; // Incrementa a pontuação
+        pontuacao++; // Incrementa a pontuação antes de mudar de pergunta
         elemento.classList.add('correct'); // Adiciona a classe verde
     } else {
         elemento.classList.add('incorrect'); // Adiciona a classe vermelha
@@ -56,13 +56,16 @@ function verificarResposta(respostaEscolhida, elemento) {
         opcoes[pergunta.correta].classList.add('correct'); 
     }
 
-    // Aguarda 1 segundo antes de passar para a próxima pergunta
+    // Atualiza a pontuação na tela imediatamente
+    document.getElementById('pontuacao').innerText = `Pontuação: ${pontuacao}`;
+
+    // Aguarda 1 segundo antes de passar para a próxima pergunta ou finalizar o quiz
     setTimeout(() => {
-        perguntaAtual++;
-        if (perguntaAtual < perguntas.length) {
-            mostrarPergunta();
+        if (perguntaAtual === perguntas.length - 1) {
+            exibirResultado(); // Exibe o resultado final se for a última pergunta
         } else {
-            exibirResultado();
+            perguntaAtual++;
+            mostrarPergunta(); // Exibe a próxima pergunta
         }
     }, 1000);
 }
@@ -79,6 +82,11 @@ function exibirResultado() {
 function reiniciarQuiz() {
     perguntaAtual = 0;
     pontuacao = 0;
+    document.getElementById('quiz-container').innerHTML = `
+        <h2 id="pergunta"></h2>
+        <ul id="opcoes"></ul>
+        <p id="pontuacao">Pontuação: 0</p>
+    `;
     mostrarPergunta();
 }
 
