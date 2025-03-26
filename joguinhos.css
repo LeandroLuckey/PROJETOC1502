@@ -61,7 +61,7 @@ button:hover {
 
 @media (max-width: 480px) {
     h2 {
-        font-size: 24px;
+        font-size: 30px;
     }
 
     button {
@@ -70,7 +70,7 @@ button:hover {
     }
 
     .game-container, .quiz-container, .joguinhos-container {
-        width: 90%;
+        width: 80%;
         padding: 20px;
     }
 
