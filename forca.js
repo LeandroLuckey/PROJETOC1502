@@ -1,5 +1,5 @@
 // Lista de palavras para o jogo
-const palavras = ["namorada", "felicidade", "amor", "catolica", "chocomenta", "maravilhosidade", "saudade", "herois", "animais", "crianças", "familia", "JesusCristo"];
+const palavras = ["namorada", "felicidade", "amor", "catolica", "chocomenta", "maravilhosidade", "saudade", "herois", "animais", "crianças", "familia", "JesusCristo", "princesa", "xuxu","doce"];
 
 // Variáveis do jogo
 let palavraEscolhida;
