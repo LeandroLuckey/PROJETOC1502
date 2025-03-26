@@ -192,24 +192,7 @@ button:hover {
     }
 }
 
-@media (max-width: 1024px) and (min-width: 768px) {
-    .quiz-container {
-        width: 90%;
-        padding: 25px;
-    }
-    h2 {
-        font-size: 6vw;
-    }
-    #pergunta {
-        font-size: 5vw;
-    }
-    li {
-        font-size: 5vw;
-    }
-    button {
-        font-size: 4vw;
-    }
-}
+
 
 /* Responsividade para Celular */
 @media (max-width: 767px) {
