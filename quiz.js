@@ -1,60 +1,67 @@
 // Perguntas e respostas do quiz
 const perguntas = [
     {
-        pergunta: "Qual é a cor favorita de você?",
-        respostas: ["Azul", "Rosa", "Verde", "Amarelo"],
-        correta: 1 // índice da resposta correta (Rosa)
+        pergunta: "Quando nos conhecemos?",
+        respostas: ["29/11/2024", "01/12/2024", "02/12/2024", "30/11/2024"],
+        correta: 3
     },
     {
-        pergunta: "Qual é o nosso filme favorito?",
-        respostas: ["A Procura da Felicidade", "O Rei Leão", "Vingadores", "Titanic"],
-        correta: 2 // índice da resposta correta (Vingadores)
+        pergunta: "Qual foi o primeiro presentinho que te dei?",
+        respostas: ["Terço lilaszinho de Ns de Guadalupe", "Chaveiro e Chocolatinho", "Camisa", "Esmaltess"],
+        correta: 1
     },
     {
-        pergunta: "Onde foi o nosso primeiro encontro?",
-        respostas: ["Praia", "Restaurante", "Cinema", "Parque"],
-        correta: 0 // índice da resposta correta (Praia)
+        pergunta: "Quem é a mulher mais linda desse mundo??",
+        respostas: ["MINHA CATINHA", "essa tá errada", "só existe uma opção MUAHAHAHA", "ACEITE OS FATOS MUAHAHAHA"],
+        correta: 0
     }
 ];
 
-// Variáveis para controlar o quiz
+// Variáveis para controle
 let perguntaAtual = 0;
 let pontuacao = 0;
 
-// Função para exibir a próxima pergunta
+// Função para exibir a pergunta
 function mostrarPergunta() {
     const pergunta = perguntas[perguntaAtual];
     document.getElementById('pergunta').innerText = pergunta.pergunta;
-    
+
     // Exibe as opções de resposta
     const opcoes = document.getElementById('opcoes');
-    opcoes.innerHTML = ''; // Limpa as opções anteriores
+    opcoes.innerHTML = ''; // Limpa opções anteriores
     pergunta.respostas.forEach((resposta, index) => {
         const li = document.createElement('li');
         li.textContent = resposta;
-        li.onclick = () => verificarResposta(index);
+        li.onclick = () => verificarResposta(index, li);
         opcoes.appendChild(li);
     });
 }
 
 // Função para verificar a resposta
-function verificarResposta(respostaEscolhida) {
+function verificarResposta(respostaEscolhida, elemento) {
     const pergunta = perguntas[perguntaAtual];
-    
+
     // Verifica se a resposta está correta
     if (respostaEscolhida === pergunta.correta) {
         pontuacao++;
-        alert('Resposta correta!');
+        elemento.classList.add('correct'); // Adiciona a classe verde
     } else {
-        alert('Resposta incorreta!');
+        elemento.classList.add('incorrect'); // Adiciona a classe vermelha
+
+        // Destaca a resposta correta automaticamente
+        const opcoes = document.querySelectorAll('#opcoes li');
+        opcoes[pergunta.correta].classList.add('correct'); 
     }
 
-    perguntaAtual++;
-    if (perguntaAtual < perguntas.length) {
-        mostrarPergunta();
-    } else {
-        exibirResultado();
-    }
+    // Aguarda 1 segundo antes de passar para a próxima pergunta
+    setTimeout(() => {
+        perguntaAtual++;
+        if (perguntaAtual < perguntas.length) {
+            mostrarPergunta();
+        } else {
+            exibirResultado();
+        }
+    }, 1000);
 }
 
 // Função para exibir o resultado final

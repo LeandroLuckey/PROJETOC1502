@@ -1,24 +1,26 @@
 /* Quiz */
 .quiz-container {
     max-width: 600px;
-    margin: 50px auto;
+    margin:  auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: beige;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 h2 {
-    color: #E89AC7;
-    font-size: 30px;
-    margin-bottom: 20px;
+    color: #ffa799;
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
 #pergunta {
     font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
+    margin-bottom: 10px;
+    color: #ffa799;
+    font-family: 'Open sans', cursive;
+
 }
 
 ul {
@@ -27,17 +29,17 @@ ul {
 }
 
 li {
-    background-color: #f0f0f0;
+    background-color: #ffa799;
     margin: 10px 0;
     padding: 15px;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 li:hover {
-    background-color: #E89AC7;
     transform: scale(1.05);
 }
 
@@ -53,7 +55,7 @@ li.incorrect {
 
 button {
     padding: 12px 20px;
-    background-color: #E89AC7;
+    background-color: #ffa799;
     color: white;
     border: none;
     border-radius: 8px;
@@ -69,7 +71,7 @@ button:hover {
 
 #pontuacao {
     font-size: 22px;
-    margin-top: 20px;
+    margin-top: 10px;
     color: #333;
 }
 
@@ -111,4 +113,20 @@ button:hover {
     .quiz-container li, .game-container button {
         font-size: 14px;
     }
+}
+
+#reiniciar-btn {
+    padding: 10px 20px;
+    background-color: #ffa799;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+#reiniciar-btn:hover {
+    background-color: #D88B9B;
 }
