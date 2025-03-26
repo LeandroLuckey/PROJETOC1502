@@ -1,26 +1,43 @@
+/* Reset para remover margens e padding indesejados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Quiz */
+body {
+    background-color: #ffa799;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
 .quiz-container {
-    max-width: 600px;
-    margin:  auto;
+    width: 100%;
+    max-width: 600px; /* Limita o tamanho máximo */
+    height: auto; /* Permite que o container se ajuste ao conteúdo */
     padding: 20px;
     background-color: beige;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    overflow: hidden; /* Impede que o conteúdo saia do container */
 }
 
 h2 {
     color: #ffa799;
-    font-size: 40px;
+    font-size: 6vw; /* Tamanho da fonte ajustável conforme a largura da tela */
     margin-bottom: 10px;
 }
 
 #pergunta {
-    font-size: 24px;
+    font-size: 4vw; /* Ajuste dinâmico do tamanho da fonte */
     margin-bottom: 10px;
     color: #ffa799;
     font-family: 'Open sans', cursive;
-
 }
 
 ul {
@@ -34,7 +51,7 @@ li {
     padding: 15px;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 5vw; /* Ajuste proporcional do texto */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -61,7 +78,7 @@ button {
     border-radius: 8px;
     cursor: pointer;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 4vw; /* Tamanho da fonte proporcional */
     transition: background-color 0.3s ease;
 }
 
@@ -70,11 +87,10 @@ button:hover {
 }
 
 #pontuacao {
-    font-size: 22px;
+    font-size: 4vw;
     margin-top: 10px;
     color: #333;
 }
-
 
 #reiniciar-btn {
     padding: 10px 20px;
@@ -84,7 +100,7 @@ button:hover {
     border-radius: 8px;
     cursor: pointer;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 4vw;
     transition: background-color 0.3s ease;
 }
 
@@ -92,42 +108,23 @@ button:hover {
     background-color: #D88B9B;
 }
 
-@media (min-width: 1025px) {
-    .quiz-container {
-        width: 600px;
-        padding: 30px;
-    }
-    h2 {
-        font-size: 40px;
-    }
-    #pergunta {
-        font-size: 24px;
-    }
-    li {
-        font-size: 22px;
-    }
-    button {
-        font-size: 18px;
-    }
-}
-
 /* Responsividade para Tablet */
 @media (max-width: 1024px) and (min-width: 768px) {
     .quiz-container {
-        width: 80%;
+        width: 90%;
         padding: 25px;
     }
     h2 {
-        font-size: 35px;
+        font-size: 6vw;
     }
     #pergunta {
-        font-size: 22px;
+        font-size: 5vw;
     }
     li {
-        font-size: 20px;
+        font-size: 5vw;
     }
     button {
-        font-size: 16px;
+        font-size: 4vw;
     }
 }
 
@@ -138,19 +135,19 @@ button:hover {
         padding: 20px;
     }
     h2 {
-        font-size: 28px;
+        font-size: 7vw; /* Ajuste ainda maior no celular */
     }
     #pergunta {
-        font-size: 20px;
+        font-size: 5vw;
     }
     li {
-        font-size: 18px;
+        font-size: 6vw;
     }
     button {
-        font-size: 16px;
+        font-size: 5vw;
     }
     #reiniciar-btn {
         padding: 10px 20px;
-        font-size: 16px;
+        font-size: 5vw;
     }
 }
