@@ -27,7 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     btnCartinhas.addEventListener('click', function () {
-        window.location.href = 'cartinhas.html';  
+        window.location.href = 'cartinhas.html'; 
+         
     });
 
     btnPlaylist.addEventListener('click', function () {
@@ -37,6 +38,14 @@ document.addEventListener('DOMContentLoaded', function() {
     btnJoguinhos.addEventListener('click', function () {
         window.location.href = 'joguinhos.html'; 
     });
+    document.getElementById('btn-quiz').onclick = function() {
+        window.location.href = 'quiz.html';
+    }
+    
+    document.getElementById('btn-forca').onclick = function() {
+        window.location.href = 'forca.html';
+    }
+    
 });
 
 
@@ -135,4 +144,6 @@ function carregarCartinhas() {
             }
         });
     }
+
+    
 }

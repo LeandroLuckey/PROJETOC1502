@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joguinhos</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Quiz Catandro</title>
     <link rel="stylesheet" href="joguinhos.css">
+    <link rel="stylesheet" href="quiz.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="joguinhos-container">
-
-        <h2>Escolha um joguinho</h2>
-        <a href="Quiz.html"><button id="btn-quiz">Esse?</button></a>
-        <a href="forca.html"><button id="btn-forca">Ou esse? em em</button></a>
+    <div class="quiz-container">
+        <h2>Joguinho de Perguntas e Respostas</h2>
+        <p id="pergunta"></p>
+        <ul id="opcoes"></ul>
+        <button id="btn-next">Próxima Pergunta</button>
+        <p id="pontuacao">Pontuação: 0</p>
     </div>
 
-
-    <script src="script.js"></script>
-    <script src="joguinhos.js"></script>
+    <script src="quiz.js"></script>
+    <script src="script.js"> </script>
 </body>
 </html>

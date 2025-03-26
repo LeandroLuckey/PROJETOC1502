@@ -1,0 +1,114 @@
+/* Quiz */
+.quiz-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #E89AC7;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#pergunta {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+li:hover {
+    background-color: #E89AC7;
+    transform: scale(1.05);
+}
+
+li.correct {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li.incorrect {
+    background-color: #FF5733;
+    color: white;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #E89AC7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #D88B9B;
+}
+
+#pontuacao {
+    font-size: 22px;
+    margin-top: 20px;
+    color: #333;
+}
+
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .game-container, .quiz-container, .joguinhos-container {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .quiz-container li, .game-container button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .game-container, .quiz-container, .joguinhos-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .quiz-container li, .game-container button {
+        font-size: 14px;
+    }
+}

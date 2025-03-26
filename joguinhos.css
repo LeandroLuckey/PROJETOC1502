@@ -1,0 +1,40 @@
+body {
+    font-family: 'Dancing Script', sans-serif;
+    background-color: #ffa799;
+    color: beige;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+
+button {
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: beige;
+    border: none;
+    color: #ffa799;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+button:hover {
+    background-color: #D88B9B;
+}
+
+.home-container, .joguinhos-container {
+    margin-top: 40px;
+    border: 2px beige solid;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+ h2 {
+    font-size: 55px;
+}
