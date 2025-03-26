@@ -38,3 +38,43 @@ button:hover {
  h2 {
     font-size: 55px;
 }
+
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .game-container, .quiz-container, .joguinhos-container {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .quiz-container li, .game-container button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .game-container, .quiz-container, .joguinhos-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .quiz-container li, .game-container button {
+        font-size: 14px;
+    }
+}
